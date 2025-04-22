@@ -1,32 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Saludo from './components/saludo'; // Importa el componente
 
+import logosena from './assets/sena.jpg'
+import Saludo from './components/saludo'; // Importa el componente
+import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-  <div>
+
+<div>
     {/* Usa el componente como una etiqueta HTML */}
-    <Saludo nombre="Ana" />
-    <Saludo nombre="Carlos" />
+    <Saludo nombre="Santiago" />
   </div>
-  
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <img src={logosena} alt="logo sena" />
       </div>
-      <h1>Vite + React quien</h1>
+      <h1>mi primera app con vite y react</h1>
       <div className="card">
-        <h3>cuenta: {count}</h3>
+        <h3>cuenta en: {count}</h3>
         <button onClick={() => setCount((count) => count + 1)}>
           incrementar
         </button>
